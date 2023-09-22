@@ -1,0 +1,175 @@
+/* Reset some default styles */
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F0F0;
+}
+
+/* Header Styles */
+#header {
+    position: relative;
+    background: white;
+}
+
+.header-bar {
+    width: 100%; /* Use 100% width for responsiveness */
+    height: 176px;
+    background: #9143DF;
+}
+
+.header-img {
+    width: 139px;
+    height: 108px;
+    position: absolute;
+    top: 34px;
+    left: 10px; /* Adjust the left positioning */
+}
+
+.header-text {
+    width: auto; /* Allow the text to adapt to its content */
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header-name {
+    width: auto; /* Allow the text to adapt to its content */
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Navigation Styles */
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFF; /* Add a background color to the navigation bar */
+}
+
+.nav-item {
+    width: 197px;
+    height: 79px;
+    background: #FFFBFB;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border: 1px solid #DDD; /* Lighten the border color */
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 79px; /* Vertically center the text */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add spacing between navigation items */
+}
+
+/* Balance Styles */
+.balance {
+    position: relative;
+    background: #A493B5;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Add spacing between the header and balance */
+}
+
+.balance-amount {
+    font-size: 50px;
+    color: white;
+}
+
+/* Content Styles */
+.content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for content items */
+    justify-content: space-around; /* Spread content items evenly */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Increase the gap between items */
+    margin-top: 20px; /* Add spacing between balance and content */
+}
+
+.content-title {
+    font-size: 24px; /* Increase the font size */
+    font-weight: 600;
+    text-align: center;
+    color: #828282;
+    width: 100%; /* Full width for titles */
+}
+
+.content-item {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust the width of each item */
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 20px; /* Increase padding for spacing */
+    background-color: #F9F9F9; /* Light gray background for content boxes */
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Income and Expenses Styles */
+.income-expenses {
+    position: relative;
+    background: #597AA1;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px;
+    margin-top: 20px; /* Add spacing between content and income/expenses */
+}
+
+.income-bar,
+.expenses-bar {
+    height: 68px;
+    background: linear-gradient(180deg, rgba(152, 67, 237, 0.72) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 24px;
+    width: 50%; /* Make the bars extend to 50% of the container */
+}
+
+.income-text,
+.expenses-text {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 50%; /* Make the text containers take up 50% of the width */
+    font-size: 24px; /* Adjust the font size for better readability */
+    font-weight: 600;
+    color: #FFF; /* White text color */
+}
+
+.income-text {
+    left: 0;
+}
+
+.expenses-text {
+    right: 0;
+}
